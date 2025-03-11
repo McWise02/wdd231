@@ -38,7 +38,13 @@ span {
     align-items: center;
     padding: 30px;
 }
+.hamburger-menu {
+    display: none;
+}
 
+.dropdown-menu {
+    display: none;
+}
 .navheader {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
