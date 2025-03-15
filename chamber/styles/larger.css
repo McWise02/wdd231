@@ -22,7 +22,7 @@ figure {
 }
 
 #card-container {
-    width: 80%;
+    width: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;  /* Rows will automatically adjust based on content */
