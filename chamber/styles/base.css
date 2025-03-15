@@ -73,7 +73,7 @@ nav {
     display: inline-block;
 }
 
-h2 {
+h1 {
     color: var(--main-blue);
     font-size: 2rem;
     margin-top: 20px;
@@ -179,10 +179,10 @@ justify-content: center;
     min-height: 0px;
     border-radius: 0px;
     box-shadow: none;
-    padding: none;
+    padding: 0px;
     text-align: left;
     transition: none;
-    min-height: none;
+    min-height: 0px;
 }
 
 #card-container.line-view .directory-card:hover{

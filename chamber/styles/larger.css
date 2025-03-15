@@ -13,7 +13,6 @@ header div {
     flex-direction: row;
     font-size: 2rem;
     justify-content: space-around;
-    align-items: none;
 }
 
 figure {
