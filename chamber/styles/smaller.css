@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuLinks {
+    display: none;
+}
+
+.menuLinks li {
+    text-align: right;
+}
+
+header div{
+    width: 100%;
+}
+
+#navButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+.open{
+    display: block;
+    padding: .75rem 2vw;
+}
+
+#card-container {
+    gap: 30px;
+    }

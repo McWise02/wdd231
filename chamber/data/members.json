@@ -1,0 +1,65 @@
+[
+    {
+        "name": "MainTech Solutions",
+        "address": "Zeil 106, 60313 Frankfurt am Main, Germany",
+        "phone": "+49 69 1234567",
+        "website": "https://www.maintech-solutions.de",
+        "image": "images/main_tech.png",
+        "membership_level": 3,
+        "description": "A leading IT solutions provider specializing in cloud services and cybersecurity."
+    },
+    {
+        "name": "Rhein Finance Group",
+        "address": "Taunustor 1, 60310 Frankfurt am Main, Germany",
+        "phone": "+49 69 2345678",
+        "website": "https://www.rheinfinance.de",
+        "image": "images/rhein_finance.png",
+        "membership_level": 2,
+        "description": "Financial consulting firm providing investment and wealth management services."
+    },
+    {
+        "name": "Frankfurt Creative Hub",
+        "address": "Hanauer Landstraße 146, 60314 Frankfurt am Main, Germany",
+        "phone": "+49 69 3456789",
+        "website": "https://www.creativehub-frankfurt.com",
+        "image": "images/creative_hub.png",
+        "membership_level": 1,
+        "description": "A co-working space for startups and freelancers in the creative industry."
+    },
+    {
+        "name": "Skyline Café",
+        "address": "Opernplatz 2, 60313 Frankfurt am Main, Germany",
+        "phone": "+49 69 4567890",
+        "website": "https://www.skylinecafe.de",
+        "image": "images/skyline_cafe.png",
+        "membership_level": 2,
+        "description": "A trendy café offering organic coffee and a panoramic view of the Frankfurt skyline."
+    },
+    {
+        "name": "EuroTech Engineering",
+        "address": "Theodor-Heuss-Allee 112, 60486 Frankfurt am Main, Germany",
+        "phone": "+49 69 5678901",
+        "website": "https://www.eurotech-engineering.de",
+        "image": "images/eurotech.png",
+        "membership_level": 3,
+        "description": "Engineering firm specializing in sustainable infrastructure and smart city projects."
+    },
+    {
+        "name": "GreenMarket Grocers",
+        "address": "Berger Straße 140, 60385 Frankfurt am Main, Germany",
+        "phone": "+49 69 6789012",
+        "website": "https://www.greenmarket.de",
+        "image": "images/green_market.png",
+        "membership_level": 1,
+        "description": "Organic grocery store focusing on locally sourced produce and sustainable products."
+    },
+    {
+        "name": "Hessen Travel Agency",
+        "address": "Kaiserstraße 32, 60311 Frankfurt am Main, Germany",
+        "phone": "+49 69 7890123",
+        "website": "https://www.hessentravel.com",
+        "image": "images/hessen-tourism.png",
+        "membership_level": 2,
+        "description": "Specialized in customized tours and business travel solutions across Europe."
+    }
+]

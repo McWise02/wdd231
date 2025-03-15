@@ -1,0 +1,31 @@
+#navButton {
+    display:none;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menuLinks {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    justify-content: space-around;
+    align-items: none;
+}
+
+figure {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#card-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;  /* Rows will automatically adjust based on content */
+    gap: 20px;  /* Space between cards */
+}
