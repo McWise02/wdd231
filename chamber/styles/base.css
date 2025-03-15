@@ -176,13 +176,12 @@ justify-content: center;
     
     align-items: center;
     justify-content: center;
-    min-height: 0px;
+    min-height: 40px;
     border-radius: 0px;
     box-shadow: none;
     padding: 0px;
     text-align: left;
     transition: none;
-    min-height: 0px;
 }
 
 #card-container.line-view .directory-card:hover{
