@@ -14,6 +14,7 @@ header img {
     width:30%
 }
 
+
 nav {
     background-color: var(--accent-gold);
     color: var(--main-blue)
@@ -31,6 +32,15 @@ nav {
 
 .menuLinks li {
     padding: .25rem 2lvw;
+}
+.menuLinks a {
+    padding: .25rem 2lvw;
+    text-decoration: none;
+    color: var(--main-blue);
+}
+.menuLinks a:hover {
+    color: #2c66a0;
+
 }
 .menuLinks li:hover {
     color: #2c66a0;
@@ -126,7 +136,7 @@ main {
 .directory-info a {
     display: inline-block;
     text-decoration: none;
-    color: #007BFF;
+    color: var(--main-blue);
     font-weight: bold;
     margin-top: 8px;
 }
