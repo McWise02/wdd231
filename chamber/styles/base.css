@@ -189,6 +189,7 @@ justify-content: center;
     box-shadow: none;
 }
 
+
 .even-line{
     background: rgb(175, 175, 255)
     }
@@ -210,4 +211,99 @@ footer {
 
 .lastModified {
     margin-bottom: 20px;
+}
+
+
+#events-business-container {
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    color: var(--main-blue);
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+
+}
+#forecast{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    width: auto; /* ie8 */
+
+}
+.container h2 {
+    background-color: var(--accent-gold);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    color: var(--main-blue);
+}
+
+.container div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.container img {
+    height: 70px
+}
+
+.container div div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+main div {
+    width: 90%;
+    text-align: center;
+}
+
+.business-card {
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--main-blue);
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for raised effect */
+}
+
+.business-card img {
+    max-height: 30px
+}
+
+
+
+.business-card-header {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    background-color: var(--accent-gold);
+    color: var(--main-blue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.business-card-header > *:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-blue); 
+}
+
+.business-card-body{
+    display:flex;
+    flex-direction:row;
+    padding:10px;
 }

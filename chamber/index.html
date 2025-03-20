@@ -27,8 +27,8 @@
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/smaller.css" media="screen and (max-width: 768px)">
         <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+        <script src="scripts/api_calls.mjs" defer></script>
         <script src="scripts/navigation.js" defer></script>
-        <script src="scripts/directory-load.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
 
         <link rel="icon" href="favicon.ico">
@@ -49,8 +49,8 @@
                 <nav>
                     <button id="navButton">=</button>
                     <ul class="menuLinks">
-                        <li><a href="./index.html">Home</a></li>
-                        <li class="current-menu-item"><a href="./directory.html">Directory</a></li>
+                        <li class="current-menu-item"><a href="./index.html">Home</a></li>
+                        <li ><a href="./directory.html">Directory</a></li>
                         <li><a href="./join.html">Join</a></li>
                         <li><a href="./discovery.html">Discovery</a></li>
                     </ul>
@@ -58,18 +58,30 @@
             </div>
         </header>
         <main>
-            <h1>Business Directory : FFM Chamber of Commerce</h1>
-            <div id="button-container">
-                <button id="grid-view"></button>
-                <button id="line-view"></button>
-            </div>
-            <div id="card-container">
+            <div>
+                <img src="images/hero-image.jpg" alt="frankfurt-city" class="hero-image">
+                <h1>Home</h1>
+                <div id="events-business-container">
+                    <div class="container" id="events">
+                        <h2>Events</h2>
+                    </div>
+                    <div class="container" id="current-weather">
+                        <h2>Current Weather</h2>
+                        <div id="current-weather-container"></div>
+                    </div>
+                    <div class="container" id="forecast">
+                        <h2>Forecast</h2>
+                    </div>
+                </div>
+                <div id="rand-business">
 
+                </div>
             </div>
         </main>
         <footer>
             <p>
-                <span id="currentyear">FFM, Chamber of Commerce</span> </p>
+                <span id="currentyear">FFM, Chamber of Commerce</span>
+            </p>
             <p class="lastModified" id="lastModified">
 
             </p>
