@@ -265,6 +265,8 @@ footer {
 main div {
     width: 90%;
     text-align: center;
+    display: grid;
+
 }
 
 .business-card {
@@ -306,4 +308,8 @@ main div {
     display:flex;
     flex-direction:row;
     padding:10px;
+}
+
+#events h2{
+    max-height: 20px;
 }

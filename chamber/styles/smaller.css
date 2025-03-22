@@ -35,12 +35,18 @@ header div{
     }
 
 
+main div {
+    display: flex;
+    flex-direction: column;
+    
+}
 
     
 #events-business-container {
     display: flex;
     flex-direction: column;
-    gap: 40px
+    gap: 40px;
+    align-self: center;
 }
 
 
@@ -92,6 +98,7 @@ header div{
 main div {
     width: 90%;
     text-align: center;
+    display: flex;
 }
 
 .business-card {
@@ -119,8 +126,6 @@ main div {
 }
 
 .business-card-header {
-    display:flex;
-    width:100%;
     flex-direction: column;
     background-color: var(--accent-gold);
     color: var(--main-blue);
