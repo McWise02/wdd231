@@ -369,7 +369,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-self: space-around;
+    justify-content: space-around;
 }
 
 #form-div {
