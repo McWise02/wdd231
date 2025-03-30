@@ -19,7 +19,7 @@
         <meta name="twitter:image:alt" content="Alt text for image">
 
         <!--  Non-Essential, But Required for Analytics -->
-        <meta property="fb:app_id" content="1111111111" />
+        <meta property="fb:app_id" content="1111111111" >
         <meta name="twitter:site" content="@ffm-chamber_of_commerce">
 
 
@@ -88,36 +88,29 @@
                         <!-- Membership levels as radio buttons with the 'animate' class -->
                         <div class="membership-level animate">
                             <input type="radio" id="non-profit-level" name="membership-level" value="Non-Profit" required>
-                            <label for="non-profit-level">
-                                <h2>Non-Profit Membership Level</h2>
-                                <button type="button" onclick="openModal('non-profit')">Learn More</button>
-                            </label>
+                            <label for="non-profit-level">Non-Profit Membership Level</label>
+                            <button type="button" id="non-profit-level" onclick="openModal('non-profit')">Learn More</button>
                         </div>
-
+                    
                         <div class="membership-level animate">
                             <input type="radio" id="bronze-level" name="membership-level" value="Bronze" required>
-                            <label for="bronze-level">
-                                <h2>Bronze Membership Level</h2>
-                                <button type="button" onclick="openModal('bronze')">Learn More</button>
-                            </label>
+                            <label for="bronze-level">Bronze Membership Level</label>
+                            <button type="button" id="bronze-level" onclick="openModal('bronze')">Learn More</button>
                         </div>
-
+                    
                         <div class="membership-level animate">
                             <input type="radio" id="silver-level" name="membership-level" value="Silver" required>
-                            <label for="silver-level">
-                                <h2>Silver Membership Level</h2>
-                                <button type="button" onclick="openModal('silver')">Learn More</button>
-                            </label>
+                            <label for="silver-level">Silver Membership Level</label>
+                            <button type="button" id="silver-level" onclick="openModal('silver')">Learn More</button>
                         </div>
-
+                    
                         <div class="membership-level animate">
                             <input type="radio" id="gold-level" name="membership-level" value="Gold" required>
-                            <label for="gold-level">
-                                <h2>Gold Membership Level</h2>
-                                <button type="button" onclick="openModal('gold')">Learn More</button>
-                            </label>
+                            <label for="gold-level">Gold Membership Level</label>
+                            <button type="button" id="gold-level" onclick="openModal('gold')">Learn More</button>
                         </div>
                     </div>
+                    
                 </div>
                 <input type="hidden" id="submission-time" name="submission-time">
 
