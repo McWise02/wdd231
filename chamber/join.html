@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A Join Page to sign up for a membership.">
+        <meta name="author" content="Micah Brown">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="FFM Chamber of Commerce">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://mcwise02.github.io/wdd231/chamber/images/frankfurt-germany.jpg">
+        <meta property="og:url" content="https://mcwise02.github.io/wdd231/chamber/directory.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!--  Non-Essential, But Recommended -->
+        <meta property="og:description" content="Building Community and bettering one another along the way.">
+        <meta property="og:site_name" content="FFFM Chamber of Commerce">
+        <meta name="twitter:image:alt" content="Alt text for image">
+
+        <!--  Non-Essential, But Required for Analytics -->
+        <meta property="fb:app_id" content="1111111111" />
+        <meta name="twitter:site" content="@ffm-chamber_of_commerce">
+
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/smaller.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/membership_modal.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+
+        <link rel="icon" href="favicon.ico">
+        <title>Sign Up : FFM Chamber of Commerce</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <div>
+                    <figure>
+                        <img src="images/frankfurt-germany.jpg" alt="Frankfurt am Main">
+                        <figcaption>Frankfurt am Main, Chamber of Commerce</figcaption>
+                    </figure>
+                </div>
+                <nav>
+                    <button id="navButton">=</button>
+                    <ul class="menuLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./directory.html">Directory</a></li>
+                        <li class="current-menu-item"><a href="./join.html">Join</a></li>
+                        <li><a href="./discovery.html">Discovery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Join the Community</h1>
+            <form id="member-form" action="./thankyou.html" method="get">
+                <div id="form-div">
+                    <div id="info">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" title="Enter your first name" autocomplete="given-name">
+                        
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" title="Enter your last name" autocomplete="family-name">
+                        
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" title="Enter your job title" autocomplete="organization-title">
+                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" title="Enter your email address" autocomplete="email" placeholder="example@example.com">
+                        
+                        <label for="cell-phone">Cell Phone</label>
+                        <input type="tel" name="cell-phone" id="cell-phone" title="Enter your mobile phone number" autocomplete="tel">
+                        
+                        <label for="organization">Organization</label>
+                        <input type="text" name="organization" id="organization" title="Enter the name of your organization" autocomplete="organization">
+                        
+                        <label for="description">Organization Description</label>
+                        <textarea name="description" id="description" title="Enter a brief description of your organization" autocomplete="off"></textarea>
+                        
+                    </div>
+                    <div id="membership-info">
+                        <!-- Membership levels as radio buttons with the 'animate' class -->
+                        <div class="membership-level animate">
+                            <input type="radio" id="non-profit-level" name="membership-level" value="Non-Profit" required>
+                            <label for="non-profit-level">
+                                <h2>Non-Profit Membership Level</h2>
+                                <button type="button" onclick="openModal('non-profit')">Learn More</button>
+                            </label>
+                        </div>
+
+                        <div class="membership-level animate">
+                            <input type="radio" id="bronze-level" name="membership-level" value="Bronze" required>
+                            <label for="bronze-level">
+                                <h2>Bronze Membership Level</h2>
+                                <button type="button" onclick="openModal('bronze')">Learn More</button>
+                            </label>
+                        </div>
+
+                        <div class="membership-level animate">
+                            <input type="radio" id="silver-level" name="membership-level" value="Silver" required>
+                            <label for="silver-level">
+                                <h2>Silver Membership Level</h2>
+                                <button type="button" onclick="openModal('silver')">Learn More</button>
+                            </label>
+                        </div>
+
+                        <div class="membership-level animate">
+                            <input type="radio" id="gold-level" name="membership-level" value="Gold" required>
+                            <label for="gold-level">
+                                <h2>Gold Membership Level</h2>
+                                <button type="button" onclick="openModal('gold')">Learn More</button>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <input type="datetime-local" id="submission-time" name="submission-time" style="display: none">
+
+                <button id="submit-button" type="submit">Submit</button>
+            </form>
+            
+            <dialog id="info-modal">
+                <h2 id="modal-tital"></h2>
+                <strong>Price</strong>
+                <p id="price"></p>
+                <ul id="benefits">
+
+                </ul>
+
+            </dialog>
+            
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear">FFM, Chamber of Commerce</span> </p>
+            <p class="lastModified" id="lastModified">
+
+            </p>
+        </footer>
+
+    </body>
+</html>

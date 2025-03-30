@@ -178,3 +178,4 @@ function append_businesses(businesses) {
 
     });
 }
+
