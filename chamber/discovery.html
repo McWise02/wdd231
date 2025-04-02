@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="A page of discovery for Frankfurt am Main. Learn interesting facts about and fun events here in frankfurt. ">
+        <meta name="author" content="Micah Brown">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="FFM Chamber of Commerce">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://mcwise02.github.io/wdd231/chamber/images/frankfurt-germany.jpg">
+        <meta property="og:url" content="https://mcwise02.github.io/wdd231/chamber/directory.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!--  Non-Essential, But Recommended -->
+        <meta property="og:description" content="Building Community and bettering one another along the way.">
+        <meta property="og:site_name" content="FFFM Chamber of Commerce">
+        <meta name="twitter:image:alt" content="Alt text for image">
+
+        <!--  Non-Essential, But Required for Analytics -->
+        <meta property="fb:app_id" content="1111111111" />
+        <meta name="twitter:site" content="@ffm-chamber_of_commerce">
+
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/smaller.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/places.js" type="module" defer></script>
+        <script src="scripts/welcom.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+
+        <link rel="icon" href="favicon.ico">
+        <title>Discovery Page : FFM Chamber of Commerce</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div>
+                <div>
+                    <figure>
+                        <img src="images/frankfurt-germany.jpg" alt="Frankfurt am Main">
+                        <figcaption>Frankfurt am Main, Chamber of Commerce</figcaption>
+                    </figure>
+                </div>
+                <nav>
+                    <button id="navButton">=</button>
+                    <ul class="menuLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./directory.html">Directory</a></li>
+                        <li><a href="./join.html">Join</a></li>
+                        <li class="current-menu-item"><a href="./discovery.html">Discovery</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1 id="welcome"></h1>
+            <div id="discover-card"></div>
+        </main>
+
+        <footer>
+            <p>
+                <span id="currentyear">FFM, Chamber of Commerce</span> </p>
+            <p class="lastModified" id="lastModified">
+
+            </p>
+        </footer>
+    </body>
+</html>

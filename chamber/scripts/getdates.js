@@ -22,3 +22,4 @@ function addCurrentYear() {
 
     currentYearElement.textContent = `© ${currentYear} ${currentYearElement.textContent}`;
 }
+

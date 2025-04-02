@@ -499,3 +499,109 @@ input[type="radio"] {
     gap: 30px;
     margin-bottom: 200px;
 }
+
+.discover_card {
+    display: grid;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    align-items: center;
+}
+.discover_card > h2 {
+    grid-area: h2;
+    color: var(--main-blue);
+    font-size: x-large;
+}
+.discover_card > figure {
+    grid-area: figure;
+}
+.discover_card > button {
+    grid-area: button;
+    background-color: var(--main-blue);
+    color: white;
+    border-radius: 10px;
+}
+.discover_card > address {
+    grid-area: address;
+}
+.discover_card > p {
+    grid-area: p;
+}
+.discover_card img {
+    width: 300px;
+}
+
+#discover-card {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+@media (max-width: 640px) {
+
+    #discover-card {
+        grid-template-areas: 
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+    .discover_card {
+        grid-template-areas:
+        "h2 h2"
+        "figure figure"
+        "p p"
+        "address address"
+        "button button";
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #discover-card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+    .discover_card {
+        grid-template-areas:
+        "h2 h2"
+        "p p"
+        "figure figure"
+        "address button";
+    }
+    .discover_card img:hover {
+        transform: scale(1.1); /* Zoom in */
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover_card {
+        grid-template-areas:
+        "figure h2"
+        "figure p"
+        "figure address"
+        "button button";
+    }
+    .discover_card img:hover {
+        transform: scale(1.1); /* Zoom in */
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+    }
+    #discover-card {
+        grid-template-areas: 
+            "card1 card2"
+            "card5 card6"
+            "card8 card4"
+            "card7 card3";
+    }
+}
