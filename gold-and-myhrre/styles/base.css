@@ -100,7 +100,7 @@ p {
     text-align: center;
 }
 
-#mobile-desktop {
+#mobile-desktop.open {
     display: flex;
     flex-direction: row;
     align-items: center;
