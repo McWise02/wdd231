@@ -1,10 +1,16 @@
 /* styles.css */
 :root {
-    --accent-blue: #FFD700  ;
-    --main-gold: #4169E1 ;
-    background-color: var(--main-gold);
-    color: var(--accent-blue);
-    font-size: 50px;
+    /* Color Scheme for "Gold and Myrrh" */
+    --primary-gold: #D4AF37;       /* Rich Gold for primary elements */
+    --secondary-myrrh: #6A4C2C;     /* Earthy Myrrh Brown */
+    --accent-cream: #F5F1E1;        /* Soft Cream for backgrounds */
+    --neutral-charcoal: #333333;    /* Dark Gray for text */
+    --highlight-deepgold: #B88D29;  /* Deep Gold for accents */
+    
+    background-color: var(--accent-cream);
+    color: var(--neutral-charcoal);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -13,27 +19,101 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+    padding: 20px;
 }
 
 section {
     width: 90%;
-    background: #2654df;
-    border: 2px solid white; 
-    border-radius: 10px;
-    padding: 10px;
+    background: var(--primary-gold);
+    border: 2px solid var(--highlight-deepgold); 
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-section button{
+section button {
+    text-align: center;
+    color: var(--secondary-myrrh);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+section button:hover {
+    transform: rotate(180deg);
+}
+
+.content {
+    display: none;
+}
+
+.content.open {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--accent-cream);
+    color: var(--neutral-charcoal);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+h1 {
+    color: var(--accent-cream);
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: var(--primary-gold);
+    font-size: 24px;
+}
+
+h2 {
+    color: var(--secondary-myrrh);
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+p {
+    color: var(--neutral-charcoal);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+#colorscheme.open  {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#colorscheme h3 {
+    font-size: 24px;
+    color: var(--secondary-myrrh);
+}
+
+#colorscheme div {
     text-align: center;
 }
-.content {
-    display: none
+
+#mobile-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
-.content.open{
-    display: flex;
-    flex-direction: column;
+#mobile-desktop img {
+    width: 300px;
+    align-self: center;
+
+}
+
+#mobile-desktop figure {
+    padding: 10px;
 }

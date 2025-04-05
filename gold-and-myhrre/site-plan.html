@@ -22,6 +22,7 @@
         <meta property="fb:app_id" content="1111111111" />
         <meta name="twitter:site" content="@ffm-chamber_of_commerce">
 
+        <script src="scripts/site_plan.js" defer></script>
 
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -38,7 +39,7 @@
         <section>
             <div>
                 <h1><strong>Site Name</strong></h1>
-                <button>&#9660;</button>
+                <button id="expand-button">&#9660;</button>
             </div>
             <div class="content">
                 <h2>Domain: gold-and-myrre.com</h2>
@@ -51,7 +52,7 @@
         <section>
             <div>
                 <h1>Site Purpose</h1>
-                <button>&#9660;</button>
+                <button id="expand-button">&#9660;</button>
             </div>
 
             <div class="content">
@@ -67,7 +68,7 @@
         <section>
             <div>
                 <h1>Scenarios</h1>
-                <button>&#9660;</button>
+                <button id="expand-button">&#9660;</button>
             </div>
 
             <div class="content">
@@ -86,26 +87,30 @@
         <section>
             <div>
                 <h1>Color Schema</h1>
-                <button>&#9660;</button>
+                <button id="expand-button">&#9660;</button>
             </div>
 
-            <div class="content">
+            <div class="content" id="colorscheme">
                 <div>
-                    <h3>Blue:</h3>
+                    <h3>Cream:</h3>
                     <ul>
                         <li>Background Color</li>
-                        <li>Header & Navigation Bar</li>
                         <li>Footer</li>
-                        <li>Secondary Buttons</li>
-                        <li>Card Backgrounds</li>
                         <li>Input Text</li>
+                        <li>Headings (H1, H2, etc.)</li>
+
                     </ul>
                 </div>
                 <div>
                     <h3>Gold:</h3>
                     <ul>
-                        <li>Main Body Text</li>
-                        <li>Headings (H1, H2, etc.)</li>
+                        <li>Card Backgrounds</li>
+                    </ul>
+                </div>    
+                <div>
+                    <h3>Brown:</h3>
+                    <ul>
+                        <li>Secondary Buttons</li>
                         <li>Links</li>
                         <li>Primary Button Background</li>
                         <li>Borders & Accents</li>
@@ -117,7 +122,7 @@
         <section>
             <div>
                 <h1>Typography</h1>
-                <button>&#9660;</button>
+                <button id="expand-button">&#9660;</button>
             </div>
             <div class="content">
                 <h2>Font: Oswald</h2>
@@ -131,10 +136,19 @@
         <section>
             <div>
                 <h1>Wireframe</h1>
-                <button>&#9660;</button>
+                <button id="expand-button">&#9660;</button>
             </div>
-                <img src="" alt="">
-            <div class="content"></div>
+                
+            <div class="content" id="mobile-desktop">
+                <figure>
+                    <img src="./images/desktop.png" alt="Desktop">
+                    <figcaption>Desktop View</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/mobile.png" alt="Mobile">
+                    <figcaption>Mobile View</figcaption>
+                </figure>
+            </div>
         </section>
     </body>
 </html>
