@@ -117,3 +117,10 @@ p {
 #mobile-desktop figure {
     padding: 10px;
 }
+
+.title {
+    background-color: var(--accent-cream);
+    color: var(--secondary-myrrh);
+    font-weight: bold;
+    font-size: 3rem;
+}
