@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="An organization that strives to benefit the community.">
+        <meta name="author" content="Micah Brown">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="FFM Chamber of Commerce">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://mcwise02.github.io/wdd231/chamber/images/frankfurt-germany.jpg">
+        <meta property="og:url" content="https://mcwise02.github.io/wdd231/chamber/directory.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!--  Non-Essential, But Recommended -->
+        <meta property="og:description" content="Building Community and bettering one another along the way.">
+        <meta property="og:site_name" content="FFFM Chamber of Commerce">
+        <meta name="twitter:image:alt" content="Alt text for image">
+
+        <!--  Non-Essential, But Required for Analytics -->
+        <meta property="fb:app_id" content="1111111111" />
+        <meta name="twitter:site" content="@ffm-chamber_of_commerce">
+
+        <script src="scripts/interface_interaction.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/smaller.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+
+
+        <link rel="icon" href="favicon.ico">
+        <title>Site Plan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">    </head>
+    <body>
+        <header>
+            <img src="images/logo.webp" alt="Gold and Myrrh" loading="lazy">
+            <div class="nav-div">
+                <button class="ham-button">&#9776</button>
+                <nav>
+                    <a  href="./index.html">Home</a>
+                    <a href="./sign_up.html">Sign Up</a>
+                    <a class="current-menu-item" href="./about.html">About</a>
+                    <a href="./games.html">Games</a>
+                    <a href="./workshops.html">Workshops</a>
+                </nav>
+
+            </div>
+        </header>
+        <main class="contact-container">
+            <h1>Contact Gold and Myrrh Games</h1>
+            <p>We'd love to hear from you! Whether it's a question, feedback, or you're just saying hi — reach out anytime.</p>
+            <div id="thank-you-message" class="thank-you"></div>
+            <form class="contact-form">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+        
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+        
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+        
+              <button type="submit">Send Message</button>
+            </form>
+          </main>
+        <footer>
+            <p>
+                <span id="currentyear">Gold and Myrrh</span> </p>
+            <p class="lastModified" id="lastModified">
+
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="An organization that strives to benefit the community.">
+        <meta name="author" content="Micah Brown">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="FFM Chamber of Commerce">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://mcwise02.github.io/wdd231/chamber/images/frankfurt-germany.jpg">
+        <meta property="og:url" content="https://mcwise02.github.io/wdd231/chamber/directory.html">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!--  Non-Essential, But Recommended -->
+        <meta property="og:description" content="Building Community and bettering one another along the way.">
+        <meta property="og:site_name" content="FFFM Chamber of Commerce">
+        <meta name="twitter:image:alt" content="Alt text for image">
+
+        <!--  Non-Essential, But Required for Analytics -->
+        <meta property="fb:app_id" content="1111111111" />
+        <meta name="twitter:site" content="@ffm-chamber_of_commerce">
+
+        <script src="scripts/interface_interaction.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/carousel.js" defer ></script>
+        <script src="scripts/workshops-carousel.js" type="module" ></script>
+        <script src="scripts/display_welcome.js" defer ></script>
+
+        <script src="scripts/games.js" type="module"></script>
+
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/smaller.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+
+
+        <link rel="icon" href="favicon.ico">
+        <title>Site Plan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">    </head>
+    <body>
+        <header>
+            <img src="images/logo.webp" alt="Gold and Myrrh" loading="lazy">
+            <div class="nav-div">
+                <button class="ham-button">&#9776</button>
+                <nav>
+                    <a class="current-menu-item" href="./index.html">Home</a>
+                    <a href="./sign_up.html">Sign Up</a>
+                    <a href="./about.html">About</a>
+                    <a href="./games.html">Games</a>
+                    <a href="./workshops.html">Workshops</a>
+                </nav>
+
+            </div>
+        </header>
+        <main>
+            <div id="welcome-message"></div>
+            <section id="new-releases">
+                <h2>New Releases</h2>
+                <div class="carousel-wrapper">
+                    <button class="arrow left" onclick="scrollCarousel(-1)">&#8592;</button>
+            
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+
+                        </div>
+                    </div>
+            
+                    <button class="arrow right" onclick="scrollCarousel(1)">&#8594;</button>
+                </div>
+            </section>
+            <section id="upcoming-workshops">
+                <h2>Upcoming Workshops</h2>
+                <div class="workshop-wrapper">
+                    <button class="arrow left" onclick="scrollWorkshop(-1)">&#8592;</button>
+            
+                    <div class="workshop-container">
+                        <div class="workshop-track" id="workshopTrack">
+                        </div>
+                    </div>
+            
+                    <button class="arrow right" onclick="scrollWorkshop(1)">&#8594;</button>
+                </div>
+            </section>
+            <section class="mission-section">
+                <div class="missiondiv">
+                    <h2>Our Mission</h2>
+                    <p>
+                    At Gold and Myrrh, our mission is to create inspiring, faith-based video games that strengthen testimonies, bring families closer together, and help Latter-day Saints of all ages grow in their love for the gospel. Through meaningful storytelling and uplifting gameplay, we aim to make faith fun, interactive, and part of everyday life.
+                    </p>
+                
+                    <div class="mission-buttons">
+                    <button class="gold-btn" onclick="location.href='about.html'">Learn More About Us</button>
+                    <button class="myrrh-btn" onclick="location.href='contact.html'">Join Our Team</button>
+                    </div>
+                </div>
+            </section>
+              
+              
+
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear">Gold and Myrrh</span> </p>
+            <p class="lastModified" id="lastModified">
+
+            </p>
+        </footer>
+    </body>
+</html>
