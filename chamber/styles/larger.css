@@ -20,7 +20,7 @@ figure {
     flex-direction: column;
     align-items: start;
 }
-
+/* Make this text a comment in my JS code */
 #card-container {
     width: 500px;
     display: grid;
